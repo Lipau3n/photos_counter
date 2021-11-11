@@ -13,7 +13,24 @@ class FileType:
 
 FILE_TYPES: List[FileType] = [
     FileType(name='JPEG', extensions=['jpg', 'jpeg']),
-    FileType(name='RAW', extensions=['arw', 'raf', 'raw']),
+    FileType(name='RAW', extensions=[
+        'raw',
+        'dng',
+        'arw', 'srf', 'sr2',  # Sony
+        'rwl',  # Leica
+        'raf',  # Fujifilm
+        'nef', 'nrw',  # Nikon
+        'crw', 'cr2', 'cr3',  # Canon
+        'erf',  # Epson
+        '3fr',  # Hasselblad
+        'mef',  # Mamiya
+        'mrw',  # Konica Minolta
+        'orf',  # Olympus
+        'ptx', 'pef',  # Pentax
+        'rw2',  # Panasonic
+        'srw',  # Samsung
+        'x3f',  # Sigma
+    ]),
 ]
 
 
